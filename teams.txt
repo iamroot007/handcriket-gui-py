@@ -1,0 +1,165 @@
+(dp0
+S'Pakistan'
+p1
+(lp2
+S'Sarfraz Ahmed'
+p3
+aS'Azhar Ali'
+p4
+aS' Ahmed Shehzad'
+p5
+aS' Mohammad Hafeez'
+p6
+aS' Babar Azam'
+p7
+aS' Shoaib Malik'
+p8
+aS' Umar Akmal'
+p9
+aS' Fakhar Zaman'
+p10
+aS' Imad Wasim'
+p11
+aS' Hasan Ali'
+p12
+aS' Fahim Ashraf'
+p13
+aS' Wahab Riaz'
+p14
+aS'Mohammad Amir'
+p15
+aS'Junaid Khan'
+p16
+aS'Shadab Khan'
+p17
+asS'Australia'
+p18
+(lp19
+S'Steve Smith'
+p20
+aS'David Warner'
+p21
+aS'Pat Cummins'
+p22
+aS' Aaron Finch'
+p23
+aS' John Hastings'
+p24
+aS' Josh Hazlewood'
+p25
+aS'Travis Head'
+p26
+aS'Moises Henriques'
+p27
+aS'Chris Lynn'
+p28
+aS'Glenn Maxwell'
+p29
+aS' James Pattinson'
+p30
+aS' Mitchell Starc'
+p31
+aS' Marcus Stoinis'
+p32
+aS' Matthew Wade'
+p33
+aS' Adam Zampa'
+p34
+asS'Bangladesh'
+p35
+(lp36
+S'Tamim Iqbal'
+p37
+aS'Soumya Sarkar'
+p38
+aS' Imrul Kayes'
+p39
+aS' Mushfiqur Rahim'
+p40
+aS' Shakib Al Hasan'
+p41
+aS' Mahmudullah'
+p42
+aS' Sabbir Rahman'
+p43
+aS' Mosaddek Hossain'
+p44
+aS' Mehedi Hasan'
+p45
+aS' Sunzamul Islam'
+p46
+aS'Mashrafe Bin Mortaza '
+p47
+aS' Mustafizur Rahman'
+p48
+aS' Taskin Ahmed'
+p49
+aS' Rubel Hossain'
+p50
+aS'Shafiul Islam'
+p51
+asS'South Africa'
+p52
+(lp53
+S'AB de Villiers '
+p54
+aS'Hashim Amla'
+p55
+aS'Farhaan Behardien'
+p56
+aS' Quinton de Kock '
+p57
+aS'JP Duminy'
+p58
+aS'Faf du Plessis'
+p59
+aS'Imran Tahir'
+p60
+aS' David Miller'
+p61
+aS'Morne Morkel'
+p62
+aS'Chris Morris'
+p63
+aS'Wayne Parnell'
+p64
+aS'Andile Phehlukwayo'
+p65
+aS'Dwaine Pretorius'
+p66
+aS'Kagiso Rabada'
+p67
+asS'India'
+p68
+(lp69
+S'Virat Kohli'
+p70
+aS' Rohit Sharma'
+p71
+aS'Shikhar Dhawan'
+p72
+aS'Ajinkya Rahane'
+p73
+aS'Yuvraj Singh'
+p74
+aS'Kedar Jadhav'
+p75
+aS'MS Dhoni'
+p76
+aS'Hardik Pandya'
+p77
+aS'Ravindra Jadeja'
+p78
+aS'Ravichandran Ashwin'
+p79
+aS'Jasprit Bumrah'
+p80
+aS'Umesh Yadav'
+p81
+aS'Bhuvneshwar Kumar'
+p82
+aS'Manish Pandey'
+p83
+aS'Mohammed Shami'
+p84
+as.

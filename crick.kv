@@ -1,0 +1,620 @@
+#:import SwapTransition kivy.uix.screenmanager.SwapTransition
+SM:
+    transition: SwapTransition() 
+    NameScreen:
+    MainScreen:
+    EditScreen:
+    TossScreen:
+    LuckTScreen:
+    TeamsScreen:
+    LeaderScreen:
+    ChooseScreen:
+    CrickScreen:
+    OverScreen:
+    WinnerScreen:
+    LooseScreen:
+    AddScreen:
+    DelScreen:
+    EditTScreen:
+    DrawScreen:
+<NameScreen>:
+    name:'name'
+    FloatLayout:
+        id:main
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "11.jpg"
+        TextInput:
+            id:t78
+            pos_hint:{'x':0,'y':0.95}
+            text:'Enter Your Name'
+            multiline:False
+            size_hint:1,0.05
+        Button:
+            id:b1
+            text:'Submit'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.45,'y':.73}
+            on_release:root.submit(t78.text)
+<MainScreen>:
+    name:'main'
+    on_pre_enter: root.dis()
+    l1289:l1234
+    FloatLayout:
+        id:main
+        l123:l1234
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "11.jpg"
+        Button:
+            id:b1
+            text:'Play'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.45,'y':.73}
+            on_release:app.root.current='choose'
+            Image:
+                source: 'enter.jpg'
+                y: self.parent.y
+                x: self.parent.x
+                size:self.parent.size
+                allow_stretch: True
+        Button:
+            id:b1
+            text:'Edit'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.45,'y':.53}
+            on_release:app.root.current='edit'
+        Button:
+            id:b1
+            text:'LeaderBoard'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.45,'y':.33}
+            on_release:app.root.current='leader'
+        Label:
+            id:l1234
+            text:'Welcome'
+            font_size:40
+            pos_hint:{'x':0,'y':0.88}
+            size_hint_y:0.1
+<CrickScreen>:
+    name:'mainp'
+    on_pre_enter:root.ini()
+    FloatLayout:
+        id:t1
+        l12:l114
+        l11:l116
+        l13:l115
+        l14:l117
+        l15:l118
+        l16:l119
+        bmain1:bmain
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "11.jpg"
+        TextInput:
+            id:t77
+            pos_hint:{'x':0,'y':0.95}
+            text:'Enter no. from 0-6 Only'
+            size_hint:1,0.05
+            multiline:False
+        Button:
+            id:b1
+            text:'Back'
+            font_size:10
+            size_hint:0.25,0.11
+            pos_hint:{'x':0,'y':0.84}
+            on_release:app.root.current='toss'
+        Button:
+            id:bmain
+            text:'Submit'
+            font_size:10
+            size_hint:0.5,0.11
+            pos_hint:{'x':0.25,'y':0.84}
+            on_release:root.submit(t77.text)
+        Button:
+            id:b1
+            text:'Main'
+            font_size:10
+            size_hint:0.25,0.11
+            pos_hint:{'x':0.75,'y':0.84}
+            on_release:app.root.current='main'
+        GridLayout:
+            cols:3
+            Label:
+                id:l114
+                text:''
+                font_size:20
+            Label:
+                id:l116
+                text:''
+                font_size:20            
+            Label:
+                id:l115
+                text:''
+                font_size:20            
+            Label:
+                id:l117
+                text:''
+                font_size:20           
+            Label:
+                id:l118
+                text:''
+                font_size:20            
+            Label:
+                id:l119
+                text:''
+                font_size:20
+<EditScreen>:
+    name:'edit'
+    FloatLayout:
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "2.jpg"
+        Button:
+            id:b1
+            text:'Add Teams'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.45,'y':.83}
+            on_release:app.root.current='add'
+        Button:
+            id:b1
+            text:'Edit Player Name'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.45,'y':.63}
+            on_release:app.root.current='editt'
+        Button:
+            id:b1
+            text:'Remove Team'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.45,'y':.43}
+            on_release:app.root.current='del'
+        Button:
+            id:b1
+            text:'Main'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.45,'y':0.23}
+            on_release:app.root.current='main'
+<TossScreen>:
+    name:'toss'
+    bat:b123
+    bowl:b124
+    FloatLayout:
+        name:'c11'
+        id:t1
+        l12:l114
+        t1234:t78
+        bat:b123
+        b131:b1
+        bowl:b124
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "11.jpg"
+        GridLayout:
+            id:ma
+            cols:1
+        TextInput:
+            id:t78
+            pos_hint:{'x':0,'y':0.95}
+            text:'Enter H for Head and T for tails'
+            disable:False
+            multiline:False
+            opacity: 1
+            size_hint:1,0.05
+        Button:
+            id:b12
+            text:'Back'
+            font_size:10
+            size_hint:0.3,0.11
+            opacity: 1
+            pos_hint:{'x':0,'y':0.84}
+            disable:False
+            on_release:app.root.current='team'
+        Button:
+            id:b1
+            text:'Submit'
+            font_size:10
+            opacity: 1
+            size_hint:0.3,0.11
+            disable:False
+            pos_hint:{'x':0.3,'y':0.84}
+            on_release:root.submit(t78.text)
+        Button:
+            id:b123
+            text:'Batting'
+            font_size:10
+            opacity: 0
+            disable:True
+            size_hint:0.5,0.11
+            pos_hint:{'x':0,'y':0.54}
+            on_release:root.ch('bat')
+        Button:
+            id:b124
+            text:'Bowling'
+            font_size:10
+            disable:True
+            opacity: 0
+            visible:False
+            size_hint:0.5,0.11
+            pos_hint:{'x':0.5,'y':0.54}
+            on_release:root.ch('bowl')
+        Button:
+            id:b12
+            text:'Main'
+            font_size:10
+            size_hint:0.4,0.11
+            pos_hint:{'x':0.6,'y':0.84}
+            on_release:app.root.current='main'
+        Label:
+            id:l114
+            text:''
+            font_size:10
+            size_hint:1,0.08
+            pos_hint:{'x':0,'y':0}
+<ChooseScreen>:
+    name:'choose'
+    FloatLayout:
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "3.jpg"
+        Button:
+            id:b1
+            text:'Main'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.5,'y':.33}
+            on_release:app.root.current='main'
+        Button:
+            id:b1
+            text:'Test Luck'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.5,'y':.73}
+            on_release:app.root.current='luck'
+        Button:
+            id:b1
+            text:'play hand cricket'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.5,'y':.53}
+            on_release:app.root.current='over'
+<LeaderScreen>:
+    name:'leader'
+    on_pre_enter:root.ini() 
+    FloatLayout:  
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "2.jpg"
+        GridLayout:
+            id:grid1
+            cols:5
+        Button:
+            id:b1
+            text:'Main'
+            font_size:10
+            size_hint:0.4,0.08
+            pos_hint:{'x':0.6,'y':.0}
+            on_release:app.root.current='main'
+        Button:
+            id:b1
+            text:'Clear Results'
+            font_size:10
+            size_hint:0.3,0.08
+            pos_hint:{'x':0.3,'y':.0}
+            on_release:root.ini()
+        Button:
+            id:b1
+            text:'Show Results'
+            font_size:10
+            size_hint:0.3,0.08
+            pos_hint:{'x':0,'y':0}
+            on_release:root.Leader()
+<LuckTScreen>:
+    name:'luck'
+    t1:t11
+    l1:l11
+    l22:l2
+    l3:l13
+    l4:l14
+    FloatLayout:
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source:'1.jpg'
+        TextInput:
+            id:t11
+            pos_hint:{'x':0,'y':0.95}
+            text:'Enter any number to test your luck'
+            multiline:False
+            size_hint:1,0.05
+        Button:
+            id:b1
+            text:'Test'
+            font_size:10
+            size_hint:0.3,0.08
+            pos_hint:{'x':0,'y':.87}
+            on_release:root.test()
+        Button:
+            id:b1
+            text:'Back'
+            font_size:10
+            size_hint:0.3,0.08
+            pos_hint:{'x':0.3,'y':.87}
+            on_release:app.root.current='choose'
+        Button:
+            id:b1
+            text:'Main'
+            font_size:10
+            size_hint:0.4,0.08
+            pos_hint:{'x':0.6,'y':.87}
+            on_release:app.root.current='main'
+        Label:
+            id: l2
+            text:''
+            size_hint:.1,0.1
+            pos_hint:{'x':0.5,'y':0.66}
+        Label:
+            id: l11
+            text:''
+            size_hint:0.1,0.1
+            pos_hint:{'x':0.5,'y':0.77}
+        Label:
+            id: l13
+            text:''
+            size_hint:0.1,0.1
+            pos_hint:{'x':0.5,'y':0.55}
+        Label:
+            id: l14
+            text:''
+            size_hint:.1,0.1
+            pos_hint:{'x':0.5,'y':0.44}
+<TeamsScreen>:
+    name:'team'
+    FloatLayout:
+        name:'c11'
+        id:t1
+        l12:l114
+        t12345:t77
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "11.jpg"
+        GridLayout:
+            id:ma
+            cols:1
+        TextInput:
+            id:t77
+            pos_hint:{'x':0,'y':0.95}
+            text:'Enter Team Name'
+            multiline:False
+            size_hint:1,0.05
+        Button:
+            id:b1
+            text:'Back'
+            font_size:10
+            size_hint:0.25,0.11
+            pos_hint:{'x':0,'y':0.84}
+            on_release:app.root.current='choose'
+        Button:
+            id:b13
+            text:'Show Teams'
+            font_size:10
+            size_hint:0.25,0.11
+            pos_hint:{'x':0.25,'y':0.84}
+            on_release:root.team()
+        Button:
+            id:b12
+            text:'Submit'
+            font_size:10
+            size_hint:0.25,0.11
+            pos_hint:{'x':0.5,'y':0.84}
+            on_release:root.submit(t77.text)
+        Button:
+            id:b1
+            text:'Main'
+            font_size:10
+            size_hint:0.25,0.11
+            pos_hint:{'x':0.75,'y':0.84}
+            on_release:app.root.current='main'
+        Label:
+            id:l114
+            text:''
+            font_size:10
+            size_hint:1,0.08
+            pos_hint:{'x':0,'y':0}
+<OverScreen>:
+    name:"over"
+    l1:l114
+    FloatLayout:
+        id:main
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "11.jpg"
+        TextInput:
+            id:t78
+            pos_hint:{'x':0,'y':0.95}
+            text:'Enter No. of overs'
+            multiline:False
+            size_hint:1,0.05
+        Button:
+            id:b1
+            text:'Submit'
+            font_size:10
+            size_hint:0.2,0.08
+            pos_hint:{'x':0.45,'y':.73}
+            on_release:root.submit(t78.text)
+        Label:
+            id:l114
+            text:''
+            font_size:45
+            size_hint:1,0.08
+            pos_hint:{'x':0,'y':0.5}
+<WinnerScreen>:
+    name:"winner"
+    on_pre_enter:root.ini()
+    FloatLayout:
+        id:main
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source:'winner.jpg'
+        Button:
+            id:b1
+            text:'Main Screen'
+            font_size:10
+            size_hint:1,0.1
+            pos_hint:{'x':0,'y':.9}
+            on_release:app.root.current='main'
+<LooseScreen>:
+    name:"loose"
+    on_pre_enter:root.ini()
+    FloatLayout:
+        id:main
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source:'loose.jpg'
+        Button:
+            id:b1
+            text:'Main Screen'
+            font_size:10
+            size_hint:1,0.1
+            pos_hint:{'x':0,'y':.9}
+            on_release:app.root.current='main'
+<AddScreen>:
+    name:"add"
+    l1:l114
+    on_pre_enter:root.ini()
+    FloatLayout:
+        id:main
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "11.jpg"
+        Button:
+            id:b1
+            text:'Edit Screen'
+            font_size:10
+            size_hint:.5,0.2
+            pos_hint:{'x':0,'y':.87}
+            on_release:app.root.current='edit'
+        Button:
+            id:b2
+            text:'Main Screen'
+            font_size:10
+            size_hint:.5,0.2
+            pos_hint:{'x':0.5,'y':.87}
+            on_release:app.root.current='main'
+        Label:
+            id:l114
+            text:''
+            font_size:30
+            size_hint:None,None
+            pos_hint:{'x':0.4,'y':0.1}
+<DelScreen>:
+    name:"del"
+    on_pre_enter:root.ini()
+    l1:l114
+    FloatLayout:
+        id:main
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "11.jpg"
+        Button:
+            id:b1
+            text:'Edit Screen'
+            font_size:10
+            size_hint:.5,0.2
+            pos_hint:{'x':0,'y':.87}
+            on_release:root.safe('edit')
+        Button:
+            id:b2
+            text:'Main Screen'
+            font_size:10
+            size_hint:.5,0.2
+            pos_hint:{'x':0.5,'y':.87}
+            on_release:root.safe('main')
+        Label:
+            id:l114
+            text:''
+            font_size:30
+            size_hint:None,None
+            pos_hint:{'x':0.4,'y':0.1}
+<EditTScreen>:
+    name:"editt"
+    l1:l114
+    on_pre_enter:root.ini()
+    FloatLayout:
+        id:main
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source: "11.jpg"
+        Button:
+            id:b1
+            text:'Edit Screen'
+            font_size:10
+            size_hint:.5,0.2
+            pos_hint:{'x':0,'y':.87}
+            on_release:root.safe('edit')
+        Button:
+            id:b2
+            text:'Main Screen'
+            font_size:10
+            size_hint:.5,0.2
+            pos_hint:{'x':0.5,'y':.87}
+            on_release:root.safe('main')
+        Label:
+            id:l114
+            text:''
+            font_size:30
+            size_hint:None,None
+            pos_hint:{'x':0.4,'y':0.1}
+<DrawScreen>:
+    name:"draw"
+    on_pre_enter:root.ini()
+    FloatLayout:
+        id:main
+        canvas:
+            Rectangle:
+                pos: self.pos
+                size: self.size
+                source:'loose.jpg'
+        Button:
+            id:b1
+            text:'Main Screen'
+            font_size:10
+            size_hint:1,0.1
+            pos_hint:{'x':0,'y':.9}
+            on_release:app.root.current='main'      
